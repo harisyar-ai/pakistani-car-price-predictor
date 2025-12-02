@@ -129,8 +129,8 @@ streamlit run car_price_prediction/app/streamlit_app.py
 URL: [https://pakistani-car-price-predictor.streamlit.app/](
 ---
 
-December 2025
-Developed by Muhammad Haris Afridi
-Stars & feedback are highly appreciated ⭐
+                            December 2025
+                 Developed by Muhammad Haris Afridi
+             Stars & feedback are highly appreciated ⭐
   
 github.com/harisyar-ai
