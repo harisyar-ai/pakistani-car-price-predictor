@@ -58,7 +58,7 @@ Over **5,000 real listings** scraped in 2025 from PakWheels.com and verified loc
 ---
 ## Repository Structure
 ```text
-
+.
 📁 car_price_prediction/
 ├── Banner.png
 ├── shap_summary.png
@@ -105,9 +105,12 @@ Over **5,000 real listings** scraped in 2025 from PakWheels.com and verified loc
 **Dominant Features:** Mileage → Year → Brand Tier → Model → Hybrid/EV → Transmission → City
 
 ---
-## Live Web Application
-**Deployment in progress**  
-Expected URL: [https://pakistani-car-price-predictor.streamlit.app](https://pakistani-car-price-predictor.streamlit.app)
+## Future Improvements
+
+- Integrate more data sources (OLX, local dealers API)
+- Add time-series trend analysis
+- Build REST API endpoint
+- Compare with deep learning models (TabNet / Neural Networks)
 
 ---
 ## Run Locally
@@ -118,14 +121,13 @@ pip install -r requirements.txt
 streamlit run car_price_prediction/app/streamlit_app.py
 ```
 ---
-## Future Improvements
+  ## Live Web Application
+**Deployment in progress**  
+Expected URL: [https://pakistani-car-price-predictor.streamlit.app](https://pakistani-car-price-predictor.streamlit.app)
 
-- Integrate more data sources (OLX, local dealers API)
-- Add time-series trend analysis
-- Build REST API endpoint
-- Compare with deep learning models (TabNet / Neural Networks)
 
 ---
+
                                           December 2025
                                Developed by Muhammad Haris Afridi
                             Stars & feedback are highly appreciated ⭐
