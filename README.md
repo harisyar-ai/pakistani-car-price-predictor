@@ -58,8 +58,8 @@ Over **5,000 real listings** scraped in 2025 from PakWheels.com and verified loc
 ---
 ## Repository Structure
 ```text
-.
-car_price_prediction/
+
+📁 car_price_prediction/
 ├── Banner.png
 ├── shap_summary.png
 ├── README.md
@@ -116,7 +116,8 @@ git clone https://github.com/harisyar-ai/pakistani-car-price-predictor.git
 cd pakistani-car-price-predictor
 pip install -r requirements.txt
 streamlit run car_price_prediction/app/streamlit_app.py
-
+```
+---
 ## Future Improvements
 
 - Integrate more data sources (OLX, local dealers API)
@@ -128,6 +129,5 @@ streamlit run car_price_prediction/app/streamlit_app.py
                                           December 2025
                                Developed by Muhammad Haris Afridi
                             Stars & feedback are highly appreciated ⭐
-```
   
     github.com/harisyar-ai
