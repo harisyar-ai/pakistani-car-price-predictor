@@ -7,7 +7,7 @@ import numpy as np
 # ==================== LOAD MODEL ====================
 @st.cache_resource
 def load_model():
-    return joblib.load(r"D:\PYTHON\Project\car_price_prediction\models\model.pkl")
+    return joblib.load("car_price_prediction/models/model.pkl")
 
 pipeline = load_model()
 preprocessor = pipeline['preprocessor']
@@ -192,4 +192,5 @@ if st.button("Predict Price in Pakistan", type="primary", use_container_width=Tr
 
 # ==================== FOOTER ====================
 st.markdown("---")
+
 st.caption("Built by **Muhammad Haris Afridi** • 2025")
