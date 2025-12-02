@@ -131,6 +131,6 @@ URL: [https://pakistani-car-price-predictor.streamlit.app/](
 
                             December 2025
                  Developed by Muhammad Haris Afridi
-             Stars & feedback are highly appreciated ⭐
+              Stars & feedback are highly appreciated ⭐
   
-github.com/harisyar-ai
+                      github.com/harisyar-ai
