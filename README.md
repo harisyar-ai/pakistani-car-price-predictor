@@ -125,9 +125,8 @@ streamlit run car_price_prediction/app/streamlit_app.py
 ```
 ---
   ## Live Web Application
-**Deployment in progress**  
-Expected URL: [https://pakistani-car-price-predictor.streamlit.app](https://pakistani-car-price-predictor.streamlit.app)
-
+**Deployed**  
+URL: [https://pakistani-car-price-predictor.streamlit.app/](
 ---
 
                                           December 2025
