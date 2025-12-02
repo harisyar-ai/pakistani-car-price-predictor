@@ -14,6 +14,13 @@
 </div>
 
 ---
+
+## Project Overview
+A complete end-to-end ML pipeline that predicts current market prices with **97.48% R²** and **±218,340 PKR** average error.  
+Final model: **LightGBM** with full preprocessing pipeline, deployed via Streamlit.
+
+---
+
 ## Why This Project Matters
 Car prices in Pakistan fluctuate heavily due to currency rates, import policy changes, dealership margins, and city-wise demand differences. Buyers and sellers often rely on guesswork or outdated references.
 
@@ -31,14 +38,10 @@ This project introduces a **data-driven, transparent, and standardized valuation
 - Students/researchers studying pricing dynamics  
 - Developers building valuation APIs  
 
----
-## Project Overview
-A complete end-to-end ML pipeline that predicts current market prices with **97.48% R²** and **±218,340 PKR** average error.  
-Final model: **LightGBM** with full preprocessing pipeline, deployed via Streamlit.
 
 ---
 ## Dataset Description
-Over **5,000 real listings** scraped in 2025 from PakWheels.com and verified local dealerships (Karachi, Lahore, Islamabad, etc.).
+Over **5,000 real listings** scraped in 2025 from PakWheels.com and other verified local dealerships (Karachi, Lahore, Islamabad, etc.).
 
 ### Raw → Cleaned → Engineered
 - Removed duplicates, outliers, typos
@@ -124,7 +127,6 @@ streamlit run car_price_prediction/app/streamlit_app.py
   ## Live Web Application
 **Deployment in progress**  
 Expected URL: [https://pakistani-car-price-predictor.streamlit.app](https://pakistani-car-price-predictor.streamlit.app)
-
 
 ---
 
