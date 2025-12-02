@@ -125,7 +125,7 @@ streamlit run car_price_prediction/app/streamlit_app.py
 - Build REST API endpoint
 - Compare with deep learning models (TabNet / Neural Networks)
 
-
+---
                                           December 2025
                                Developed by Muhammad Haris Afridi
                             Stars & feedback are highly appreciated ⭐
