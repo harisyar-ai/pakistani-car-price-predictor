@@ -4,6 +4,5 @@ numpy
 lightgbm
 joblib
 scikit-learn
-shap
 plotly
 matplotlib
