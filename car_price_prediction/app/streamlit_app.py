@@ -3,21 +3,18 @@ import streamlit as st
 import joblib
 import pandas as pd
 import numpy as np
-import shap
-import matplotlib.pyplot as plt
 
 # ==================== LOAD MODEL ====================
 @st.cache_resource
 def load_model():
     pipeline = joblib.load("car_price_prediction/models/model.pkl")
+    # pipeline = joblib.load("D:\\PYTHON\\Project\\car_price_prediction\\models\\model.pkl")
     model = pipeline['model']
     preprocessor = pipeline['preprocessor']
-    explainer = shap.TreeExplainer(model)  # ← SHAP explainer added
     return {
         'pipeline': pipeline,
         'model': model,
         'preprocessor': preprocessor,
-        'explainer': explainer
     }
 
 # Load everything
@@ -25,10 +22,9 @@ loaded = load_model()
 pipeline = loaded['pipeline']
 model = loaded['model']
 preprocessor = loaded['preprocessor']
-explainer = loaded['explainer']
 
 # ==================== PAGE CONFIG ====================
-st.set_page_config(page_title="Pakistani Car Price Predictor", page_icon="Pakistan", layout="centered")
+st.set_page_config(page_title="Pakistani Car Price Predictor", layout="centered")
 
 # ==================== HEADER ====================
 st.markdown("""
@@ -143,7 +139,7 @@ if st.button("Predict Price in Pakistan", type="primary", use_container_width=Tr
         'is_new_car': 1 if condition == "New" else 0,
         'city_premium': 1 if city in ["Lahore", "Islamabad", "Karachi"] else 0,
         'brand_tier': 3 if brand in ["Toyota","Honda"]
-                     else (2 if brand in ["Kia","Hyundai","MG","Mercedes","BMW","Audi"] else 1),
+                         else (2 if brand in ["Kia","Hyundai","MG","Mercedes","BMW","Audi"] else 1),
         'is_top_model': 1 if model_input.lower() in [
             "civic","city","corolla","yaris","sportage","tucson","fortuner","revo",
             "grande","prius","aqua","vezel","hr-v"
@@ -198,53 +194,11 @@ if st.button("Predict Price in Pakistan", type="primary", use_container_width=Tr
         else:
             st.warning(f"Model is **{confidence}% confident** — This car is quite rare")
 
-        st.caption("Prices are based on real 2024–2025 market listings • Last updated Dec 2025")
-
-        # ==================== USER-FRIENDLY TOP 4 SHAP BARS ====================
-        st.markdown("### How each feature affected the price")
-
-        X_processed = preprocessor.transform(df)
-        shap_values = explainer.shap_values(X_processed)
-        if isinstance(shap_values, list):
-            shap_val = shap_values[1] if len(shap_values) > 1 else shap_values[0]
-        else:
-            shap_val = shap_values
-
-        feature_names = preprocessor.get_feature_names_out()
-        impacts = sorted(zip(feature_names, shap_val[0]), key=lambda x: abs(x[1]), reverse=True)[:4]
-
-        name_map = {
-            'mileage': f"Mileage ({mileage:,} km)",
-            'age': f"Age ({2025-year} years)",
-            'year': f"Year ({year})",
-            'brand_tier': f"Brand ({brand})",
-            'city_premium': f"City ({city})",
-            'is_automatic': f"Transmission ({transmission})",
-            'is_hybrid_or_ev': f"Fuel ({fuel})",
-            'is_top_model': f"Model ({model_input})",
-            'is_imported': "Imported",
-            'is_new_car': "Brand New",
-            'log_mileage': f"Mileage ({mileage:,} km)",
-            'mileage_per_year': f"Usage ({mileage//max(2025-year,1):,} km/year)",
-        }
-
-        max_impact = max(abs(v) for _, v in impacts) if impacts else 1
-        bar_length = 20
-
-        for feat, val in impacts:
-            clean_name = feat.split("__")[-1]
-            display = name_map.get(clean_name, clean_name.replace("_", " ").title())
-            filled = int((abs(val) / max_impact) * bar_length)
-            bar = "█" * filled + "░" * (bar_length - filled)
-            if val > 0:
-                st.success(f"↑ **{display}** → ` {bar} ` +{abs(val)/1000:,.0f}K PKR")
-            else:
-                st.error(f"↓ **{display}** → ` {bar} ` {val/1000:,.0f}K PKR")
-
     except Exception as e:
         st.error("This combination is very rare — accurate prediction not possible.")
         st.warning("Model confidence: **Below 50%**")
 
 # ==================== FOOTER ====================
 st.markdown("---")
+st.caption("Prices are based on real 2024–2025 market listings • Last updated Dec 2025")
 st.caption("© Built by **Muhammad Haris Afridi** • 2025")
