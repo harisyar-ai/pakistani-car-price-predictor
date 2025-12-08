@@ -132,7 +132,6 @@ streamlit run car_price_prediction/app/streamlit_app.py
         Click here for Car Price Prediction
     </a>
 </div>
----
 
                             December 2025
                  Developed by Muhammad Haris Afridi
