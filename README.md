@@ -124,9 +124,14 @@ pip install -r requirements.txt
 streamlit run car_price_prediction/app/streamlit_app.py
 ```
 ---
-  ## Live Web Application
+  ## Live Web App
   
-URL: [https://pakistani-car-price-predictor.streamlit.app/](
+<div style="padding:10px; font-size:100%; text-align:left;">
+    URL: 
+    <a href="https://pakistani-car-price-predictor.streamlit.app/" target="_blank">
+        https://pakistani-car-price-predictor.streamlit.app/
+    </a>
+</div>
 ---
 
                             December 2025
