@@ -129,7 +129,7 @@ streamlit run car_price_prediction/app/streamlit_app.py
 <div style="padding:10px; font-size:100%; text-align:left;">
     URL: 
     <a href="https://pakistani-car-price-predictor.streamlit.app/" target="_blank">
-        https://pakistani-car-price-predictor.streamlit.app/
+        Click here for Car Price Prediction
     </a>
 </div>
 ---
