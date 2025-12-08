@@ -133,6 +133,7 @@ streamlit run car_price_prediction/app/streamlit_app.py
     </a>
 </div>
 
+---
                             December 2025
                  Developed by Muhammad Haris Afridi
               Stars & feedback are highly appreciated ⭐
