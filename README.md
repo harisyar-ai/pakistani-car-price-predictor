@@ -69,7 +69,7 @@ Over **5,000 real listings** scraped in 2025 from PakWheels.com and other verifi
 ├── LICENSE
 ├── .gitignore
 ├── requirements.txt
-├── car_price_prediction/                ← Your main project folder
+├── car_price_prediction/                ← Main project folder
 │   ├── app/
 │   |   └── streamlit_app.py             ← The web app
 │   ├── data/
@@ -82,7 +82,7 @@ Over **5,000 real listings** scraped in 2025 from PakWheels.com and other verifi
 │   ├── src/                       
 |   |   └── data_utils.py                ← Data cleaning file
 |   |   └── feature_engineering.py       ← New Features are added in thi file
-|   |   └── shap_lightgbm.py             ← This file is used to show the dominant feautures
+|   |   └── shap_lightgbm.py             ← Dominant Features
 ```
 ---
 ## Model Comparison
@@ -136,6 +136,5 @@ streamlit run car_price_prediction/app/streamlit_app.py
 ---
                             December 2025
                  Developed by Muhammad Haris Afridi
-              Stars & feedback are highly appreciated ⭐
   
-                      github.com/harisyar-ai
+                     github.com/harisyar-ai
