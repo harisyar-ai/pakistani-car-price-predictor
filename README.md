@@ -20,6 +20,15 @@ A complete end-to-end ML pipeline that predicts current market prices with **97.
 Final model: **LightGBM** with full preprocessing pipeline, deployed via Streamlit.
 
 ---
+  ## Live Web App
+  
+<div style="padding:10px; font-size:100%; text-align:left;">
+    URL: 
+    <a href="https://pakistani-car-price-predictor.streamlit.app/" target="_blank">
+        Click here for Car Price Prediction
+    </a>
+</div>
+---
 
 ## Why This Project Matters
 Car prices in Pakistan fluctuate heavily due to currency rates, import policy changes, dealership margins, and city-wise demand differences. Buyers and sellers often rely on guesswork or outdated references.
@@ -123,15 +132,6 @@ cd pakistani-car-price-predictor
 pip install -r requirements.txt
 streamlit run car_price_prediction/app/streamlit_app.py
 ```
----
-  ## Live Web App
-  
-<div style="padding:10px; font-size:100%; text-align:left;">
-    URL: 
-    <a href="https://pakistani-car-price-predictor.streamlit.app/" target="_blank">
-        Click here for Car Price Prediction
-    </a>
-</div>
 
 ---
                             December 2025
