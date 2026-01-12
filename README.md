@@ -37,16 +37,16 @@ Car prices in Pakistan fluctuate heavily due to currency rates, import policy ch
 This project introduces a **data-driven, transparent, and standardized valuation system** using real market data and machine learning.
 
 **Key problems solved**  
-- Inconsistent pricing across cities and dealers  
-- Manual estimation errors  
-- Lack of reliable online valuation tools  
-- Difficulty comparing similar vehicles  
+- Inconsistent pricing across cities and dealers,
+- Manual estimation errors,
+- Lack of reliable online valuation tools,  
+- Difficulty comparing similar vehicles.  
 
 **Who benefits**  
-- Individual buyers & sellers  
-- Dealerships and showrooms  
-- Students/researchers studying pricing dynamics  
-- Developers building valuation APIs  
+- Individual buyers & sellers,  
+- Dealerships and showrooms,  
+- Students/researchers studying pricing dynamics,  
+- Developers building valuation APIs.  
 
 
 ---
@@ -54,19 +54,19 @@ This project introduces a **data-driven, transparent, and standardized valuation
 Over **5,000 real listings** scraped in 2025 from PakWheels.com and other verified local dealerships (Karachi, Lahore, Islamabad, etc.).
 
 ### Raw → Cleaned → Engineered
-- Removed duplicates, outliers, typos
-- Standardized brand/model names and units
-- Created **19 powerful features** from 9 raw columns
+- Removed duplicates, outliers, typos,
+- Standardized brand/model names and units,
+- Created **19 powerful features** from 9 raw columns.
 
 **Key Engineered Features**  
-- Vehicle age & mileage per year  
-- Log-scaled mileage  
-- Brand tier (Premium / Mid-range / Budget)  
-- Popular model flags (Corolla, Civic, Fortuner, etc.)  
-- Hybrid/EV premium  
-- Imported vs local flag  
-- Automatic transmission  
-- City price premium (Lahore/Karachi/Islamabad)  
+- Vehicle age & mileage per year,  
+- Log-scaled mileage,  
+- Brand tier (Premium / Mid-range / Budget),  
+- Popular model flags (Corolla, Civic, Fortuner, etc.),  
+- Hybrid/EV premium,  
+- Imported vs local flag,  
+- Automatic transmission,  
+- City price premium (Lahore/Karachi/Islamabad).  
 
 ---
 ## Repository Structure
