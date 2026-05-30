@@ -1367,7 +1367,7 @@ if page == "🔮 Predict Price":
             <div class="result-box">
                 <div class="result-label">Estimated Market Price</div>
                 <div class="result-price">PKR {result_values["price"]:.1f} Lacs</div>
-                <div class="result-range">Range: PKR {result_values["low"]:.1f} â€” {result_values["high"]:.1f} Lacs</div>
+                <div class="result-range">Range: PKR {result_values["low"]:.1f} - ” {result_values["high"]:.1f} Lacs</div>
                 <div class="result-urdu">{result_values["urdu_str"]}</div>
                 <span class="confidence-badge {result_values["confidence_cls"]}">{result_values["confidence_label"]}</span>
             </div>
