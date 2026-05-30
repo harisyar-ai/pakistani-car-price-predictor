@@ -2,8 +2,8 @@ streamlit
 joblib
 pandas
 numpy
-lightgbm
-scikit-learn
-category_encoders
+scikit-learn==1.7.1
+lightgbm==4.6.0
 requests
 beautifulsoup4
+lxml
