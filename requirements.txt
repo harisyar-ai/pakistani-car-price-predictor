@@ -1,8 +1,9 @@
 streamlit
+joblib
 pandas
 numpy
 lightgbm
-joblib
 scikit-learn
-plotly
-matplotlib
+category_encoders
+requests
+beautifulsoup4
