@@ -27,7 +27,7 @@ st.set_page_config(
     page_title="Pakistani Cars Price Predictor | 2026 Study",
     page_icon="🚗",
     layout="wide",
-    initial_sidebar_state="collapsed"
+     initial_sidebar_state="expanded"
 )
 
 # ── VIEWPORT + SUPPRESS BALLOONS ─────────────────────────────
