@@ -1375,7 +1375,7 @@ if page == "🔮 Predict Price":
 
         col_live1, col_live2, col_live3 = st.columns([1.5, 2, 1.5])
         with col_live2:
-            if st.button("SHOW SIMILAR LISTINGS FROM PAKWHEELS", use_container_width=True):
+            if st.button("SHOW SIMILAR LISTINGS", use_container_width=True):
                 st.session_state["show_live_listings"] = True
                 st.session_state["live_listings_page"] = 0
                 st.session_state["similar_source_page"] = 1
