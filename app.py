@@ -1512,12 +1512,12 @@ st.markdown("""
 
 # ── PAGE ROUTING ────────────────────────────────────────────────
 PAGE_KEYS   = ["predict", "search", "docs", "about"]
-PAGE_LABELS = ["Predict", "Search", "Docs", "About Us"]
+PAGE_LABELS = ["Predict", "Search", "Docs", "About"]
 PAGE_FULL   = {
     "predict": "🔮 Predict",
     "search":  "🔎 Search",
     "docs":    "ℹ️ Docs",
-    "about":   "👤 About Us",
+    "about":   "👤 About",
 }
 
 # ── ROUTING via hidden st.radio ──────────────────────────────────
@@ -2271,7 +2271,7 @@ elif page == "ℹ️ Docs":
 #  PAGE 5 — ABOUT THE AUTHOR
 # ══════════════════════════════════════════════════════════════
 
-elif page == "👤 About Us":
+elif page == "👤 About":
     st.markdown('<div class="section-heading">About the Author</div><div class="section-divider"></div>', unsafe_allow_html=True)
 
     # ── Hero card with avatar + bio
